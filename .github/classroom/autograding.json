@@ -1,0 +1,23 @@
+{
+  "__deactivated_tests": [
+    {
+      "name": "cppcheck",
+      "setup": "sudo apt install --assume-yes cppcheck",
+      "run": "cppcheck --error-exitcode=1 .",
+      "timeout": 1,
+      "points": 1
+    }
+  ],
+  "tests": [
+    {
+      "name": "TODO_test",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./TODO_test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": TODO
+    }
+  ]
+}
