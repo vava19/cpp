@@ -1,0 +1,44 @@
+
+----github commands
+git rm example.txt
+git rm file1.txt file2.txt file3.txt
+git commit -m "Delete files"
+git push origin <branch-name>
+
+
+
+cd /path/to/local/repository
+git add myfile.txt
+git commit -m "added myfile.txt"
+git push
+
+--------
+-- upload all files
+git init    --> iz trenutno foldera u kojem se nalazimo
+git add .
+git commit -m "Added new files"
+git push
+
+
+--
+ It s generally a good idea to pull changes from the 
+ remote repository before pushing your own changes. 
+
+ ---
+ git pull
+
+ ---
+ -----------------------------for new commit
+# Make changes to the file in your local repository
+# ...
+
+# Stage the changes for commit
+$ git add myfile.txt
+
+# Commit the changes with a descriptive message
+$ git commit -m "Updated myfile.txt with new content"
+
+# Push the changes to the remote repository
+$ git push
+--------------------------------------------
+
